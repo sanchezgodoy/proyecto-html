@@ -1,0 +1,46 @@
+
+
+.contenedor {
+    display: flex;
+    /* width: 40vh;
+    height: 40vh;  
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    /* background-color: chartreuse; */
+
+}
+
+.item {
+    width: 40vh;
+    height: 30vh;  
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.barra {
+    background-color: rgb(250, 246, 246, 0.5);
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+    box-shadow:20px 25px 45px rgba(0, 0, 0, 0.4);
+}
+
+h4{
+    text-align: left;
+}
+
+.progreso{
+    background-color: rgb(250, 246, 246, 1);
+    width: var(--w);
+    height: 100%;
+    border-radius: 10px;
+    animation:Aumentar 5s ease;
+}
+
+@keyframes Aumentar{
+    0%{width:0%;}
+    100%{width: var(--w);}
+}

@@ -60,6 +60,7 @@
   @media (768px <= width) {
     .header .header__image {
       width: 200px;
+      padding: 2em;
     }
   }
  .header__nav__list {
@@ -77,7 +78,7 @@
   background-color: var(--main-brand-color);
   border: none;
   border-radius: 5px;
-  bottom: 0;
+ 
  }
  
  @media (hover: hover) {
