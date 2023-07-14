@@ -2,30 +2,32 @@
 
 .contenedor {
     display: flex;
-    /* width: 40vh;
-    height: 40vh;  
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
+    width: 100%;
+    height: 150px;  
+    align-items: center;
     /* background-color: chartreuse; */
+    padding: 1px;
+    
 
 }
 
 .item {
-    width: 40vh;
-    height: 30vh;  
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    width: 40vh; 
+    /* height: 10px;   */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-size: 8px;
+   
 
 
 }
 .barra {
     background-color: rgb(250, 246, 246, 0.5);
-    width: 200px;
-    height: 10px;
+    width: 90px;
+    height: 8px;
     border-radius: 10px;
-    box-shadow:20px 25px 45px rgba(0, 0, 0, 0.4);
+    
 }
 
 h4{
@@ -43,4 +45,11 @@ h4{
 @keyframes Aumentar{
     0%{width:0%;}
     100%{width: var(--w);}
+}
+
+.encabezado {
+    /* background-color: rgba(230, 21, 21, 0.5); */
+    width: 100%;
+    height: 40px;
+
 }

@@ -7,7 +7,10 @@
    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="columnas.css">
+    <link rel="stylesheet" href="formulario.css"
 </head>
+
+
 <body class="main-bg">
   <header class="header">
     <div class="header__image">
@@ -28,23 +31,28 @@
     </nav>
   </header>
   <main class="main">
-    <section">
+    <div>
       <h1>Jose Sánchez Godoy</h1>
       <p>Me llamo José Sánchez tengo 43 años, soy Auditor de profesión actualmente busco un giro para llegar a ser desarrollador de software</p>
-   </section>
+    </div>
   
-    <section class="colum">
-      <h1>Full Stack Developer</h1>
-      <h2>Skills</h2>
+    <section>
+      <div class="encabezado">
+        <h1>Full Stack Developer Skills</h1>
+        
+      
+    </div>
       <div class="contenedor">
+       
+
         <div class="item">
-        <div class="skills">
+         <div class="skills">
           <h4>HTML</h4>
           <div class="barra">
             <div class="progreso" style="--w:40%"></div>
           </div>
-        </div>
-        <div class="skills">
+          </div>
+          <div class="skills">
           <h4>CSS</h4>
           <div class="barra">
             <div class="progreso" style="--w:50%"></div>
@@ -56,9 +64,9 @@
             <div class="progreso" style="--w:20%"></div>
           </div>
         </div>
-      </div>
+        </div>
 
-      <div class="item">
+        <div class="item">
         <div class="skills">
           <h4>SQL</h4>
           <div class="barra">
@@ -98,20 +106,100 @@
             <div class="progreso" style="--w:70%"></div>
           </div>
         </div>
-      </div>
-        
+        </div>
       </div>
     
     </section>
-  <section class="banner">
-    <picture>
-      <source srcset="https://res.cloudinary.com/responsivebreakpoints/image/upload/c_scale,w_1400/v1453714657/robot.png" media="(min-width: 1200px)">
+
+    <!-- <section class="banner">
+      <img src="imagenes/robot_c_scale,w_1246.png" 
+      alt=""
+      srcset="
+      imagenes/robot_c_scale,w_673.png, 
+      imagenes/robot_c_scale,w_1246.png
+      "
+      >
+    </section> -->
+  
+  <section class="banner__contenedor">
+    <div>
+    <picture class="banner__img">
+      <source srcset="https://res.cloudinary.com/responsivebreakpoints/image/upload/ar_1:1,c_fill,g_auto/c_scale,w_750/v1453714657/robot.png" media="(min-width: 1200px)">
       <source srcset="https://res.cloudinary.com/responsivebreakpoints/image/upload/c_scale,w_673/v1453714657/robot.png" media="(min-width: 768px)">
       <img src="https://res.cloudinary.com/responsivebreakpoints/image/upload/c_scale,w_200/v1453714657/robot.png">
     </picture>
-  </section>
+  </div>
+ </section> 
+ <div class="card">
+  <h1>Contactame</h1>
 
-SS
+  <form class="form" method="post" action="registro.html">
+
+  <div class="form__element">
+    <label class="form__label" for="nombre">Nombre</label>
+    <input class="form__input" type="text" id="nombre" required>
+  </div>
+  <div class="form__element">
+    <label class="form__label" for="apellido">Apellidos</label>
+    <input class="form__input" type="text" id="apellido" name="apellido" required>
+  </div>
+  <div class="form__element">
+    <label class="form__label" for="phone">Phone</label>
+    <input
+      class="form__input"
+      type="tel"
+      id="phone"
+      name="phone"
+      placeholder="Format is 600-000-0000"
+      title="Format is 600-000-0000"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+      required
+    >
+  </div>
+  <div class="form__element">
+    <label class="form__label" for="github">Github username</label>
+    <input
+      class="form__input"
+      id="github"
+      type="github"
+      placeholder="El formato es /@username"
+      name="mail"
+      required>
+</form> 
+
+
+<fieldset class="form__element">
+  <legend>Como me conociste</legend>
+  <div>
+    <label for="universidad">Universidad</label>
+    <input type="radio" id="universidad" name="category" checked value="universidad">
+    <label for="keepcoding Kick-of">keepcoding Kick-of</label>
+    <input type="radio" id="keepcoding" name="category" value="keepcoding">
+    <label for="colegio">Colegio</label>
+    <input type="radio" id="colegio" name="category" value="Colegio">
+
+    <label for="github">Github</label>
+    <input type="radio" id="github" name="category" value="github">
+  </div>
+
+</fieldset>
+<div class="form__element">
+  <label class="form__label" for="mas_informacion">Más información</label>
+  <textarea class="form__input" name="mas_informacion" id="mas_informacion" placeholder="Qué más quieres saber" required minlength="10" maxlength="180" required></textarea>
+</div>
+</div>
+
+
+<div class="form__element form__element--checkbox">
+  <input type="checkbox" name="newsletter" id="newsletter" checked>
+  <label for="newsletter">Quieres acceso a las Newsletter</label>
+</div>
+
+<div>
+  
+  <input class="btn" type="submit" value="Enviar">
+  <button class="btn btn--secondary" type="reset">reset</button>
+</div>
   </main>
 
     <footer class="footer">
