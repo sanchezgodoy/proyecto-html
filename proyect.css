@@ -1,0 +1,49 @@
+
+.video-container {
+    width: 100%;
+    max-width: 800px; /* Ajusta el tamaño del contenedor según tus necesidades */
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    opacity: 0; /* El video estará inicialmente oculto */
+    animation: fadeIn 2s ease-in forwards; /* Ajustamos "forwards" para mantener la opacidad después de la animación */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .shows {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1220px;
+  }
+  .shows__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    gap: 15px;
+  }
+  .shows .shows__list img {
+    width: 100%;
+  }
+  .shows .shows__list figure {
+    margin: 0;
+  }
+  
+  @media (min-width: 48em) {
+    .shows__list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+ 
