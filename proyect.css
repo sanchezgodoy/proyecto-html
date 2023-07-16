@@ -1,4 +1,8 @@
 
+.header {
+height: 100px;
+}
+
 .video-container {
     width: 100%;
     max-width: 800px; /* Ajusta el tamaño del contenedor según tus necesidades */
@@ -10,7 +14,7 @@
     width: 100%;
     height: auto;
     opacity: 0; /* El video estará inicialmente oculto */
-    animation: fadeIn 2s ease-in forwards; /* Ajustamos "forwards" para mantener la opacidad después de la animación */
+    animation: fadeIn 4s ease-in forwards; /* Ajustamos "forwards" para mantener la opacidad después de la animación */
   }
   
   @keyframes fadeIn {

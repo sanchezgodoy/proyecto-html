@@ -7,11 +7,12 @@
    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="columnas.css">
-    <link rel="stylesheet" href="formulario.css"
+    <link rel="stylesheet" href="formulario.css">
 </head>
 
 
 <body class="main-bg">
+
   <header class="header">
     <div class="header__image">
       <img src="imagenes/lenguajes.png" alt="Logo tecno">
@@ -19,33 +20,38 @@
     <nav class="header__nav">
       <ul class="header__nav__list">
         <li class="header__nav__list__item">
-          <a class="btn" href="sign-in.html">Proyectos</a>
+          <a class="btn" href="http://127.0.0.1:5500/proyect_page.html" target="_blank">Proyectos</a>
         </li>
         <li class="header__nav__list__item">
-          <a class="btn" href="sign-in.html">Skills</a>
+          <a class="btn" href="#skills">Skills</a>
         </li>
         <li class="header__nav__list__item">
-          <a class="btn" href="sign-in.html">Contacto</a>
+          <a class="btn" href="#contact">Contacto</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main">
-    <div>
+
+  <main class="main" id="skills">
+    <div class="encabezado">
       <h1>Jose Sánchez Godoy</h1>
       <p>Me llamo José Sánchez tengo 43 años, soy Auditor de profesión actualmente busco un giro para llegar a ser desarrollador de software</p>
     </div>
-  
-    <section>
-      <div class="encabezado">
-        <h1>Full Stack Developer Skills</h1>
-        
-      
-    </div>
+
+
+<section>
+
+  <div>
+    <h1>Full Stack Developer Skills</h1>
+  </div>
+
+
+
       <div class="contenedor">
+        
        
 
-        <div class="item">
+      <div class="item">
          <div class="skills">
           <h4>HTML</h4>
           <div class="barra">
@@ -107,9 +113,10 @@
           </div>
         </div>
         </div>
-      </div>
-    
+      </div >
     </section>
+    
+  
 
     <!-- <section class="banner">
       <img src="imagenes/robot_c_scale,w_1246.png" 
@@ -121,28 +128,32 @@
       >
     </section> -->
   
-  <section class="banner__contenedor">
-    <div>
-    <picture class="banner__img">
+  <section class="banner">
+    <div class="banner__imagen">
+    <picture>
       <source srcset="https://res.cloudinary.com/responsivebreakpoints/image/upload/ar_1:1,c_fill,g_auto/c_scale,w_750/v1453714657/robot.png" media="(min-width: 1200px)">
       <source srcset="https://res.cloudinary.com/responsivebreakpoints/image/upload/c_scale,w_673/v1453714657/robot.png" media="(min-width: 768px)">
-      <img src="https://res.cloudinary.com/responsivebreakpoints/image/upload/c_scale,w_200/v1453714657/robot.png">
+      <img src="https://res.cloudinary.com/responsivebreakpoints/image/upload/c_scale,w_200/v1453714657/robot.png" alt="">
     </picture>
   </div>
  </section> 
- <div class="card">
-  <h1>Contactame</h1>
 
-  <form class="form" method="post" action="registro.html">
+
+ <form id="contact"  action="registro.html" class="form" method="post">
+  <div>
+    <h1>Contactame</h1>
+  </div>
 
   <div class="form__element">
     <label class="form__label" for="nombre">Nombre</label>
     <input class="form__input" type="text" id="nombre" required>
   </div>
+
   <div class="form__element">
     <label class="form__label" for="apellido">Apellidos</label>
     <input class="form__input" type="text" id="apellido" name="apellido" required>
   </div>
+
   <div class="form__element">
     <label class="form__label" for="phone">Phone</label>
     <input
@@ -156,16 +167,19 @@
       required
     >
   </div>
-  <div class="form__element">
+   <div class="form__element">
     <label class="form__label" for="github">Github username</label>
-    <input
+    <input 
       class="form__input"
       id="github"
-      type="github"
+      type="url"
       placeholder="El formato es /@username"
       name="mail"
-      required>
-</form> 
+      required
+      >
+    </div>
+  </form>
+    
 
 
 <fieldset class="form__element">
@@ -173,16 +187,19 @@
   <div>
     <label for="universidad">Universidad</label>
     <input type="radio" id="universidad" name="category" checked value="universidad">
-    <label for="keepcoding Kick-of">keepcoding Kick-of</label>
+    <label for="keepcoding">keepcoding</label>
     <input type="radio" id="keepcoding" name="category" value="keepcoding">
     <label for="colegio">Colegio</label>
     <input type="radio" id="colegio" name="category" value="Colegio">
 
     <label for="github">Github</label>
-    <input type="radio" id="github" name="category" value="github">
+    <input type="radio" id="github" name="category" value="git">
   </div>
 
+    
 </fieldset>
+
+
 <div class="form__element">
   <label class="form__label" for="mas_informacion">Más información</label>
   <textarea class="form__input" name="mas_informacion" id="mas_informacion" placeholder="Qué más quieres saber" required minlength="10" maxlength="180" required></textarea>
@@ -204,9 +221,9 @@
 
     <footer class="footer">
       <div class="footer__socialmedia">
-        <a class="button" href="https://www.facebook.com"><button><img src="imagenes/logo facebook.jpg" alt="logo facebook"></button></a>
-        <a class="button" href="https://www.linkedin.com/feed/"><button><img src="imagenes/logo linkedin.png" alt=""></button></a>
-        <a class="button" href="https://www.instagram.com"><button><img src="imagenes/logo instagram.jpg" alt=""></button></a>
+        <a class="button" href="https://www.facebook.com" target="_blank"><button><img src="imagenes/logo facebook.jpg" alt="logo facebook"></button></a>
+        <a class="button" href="https://www.linkedin.com/feed/" target="_blank"><button><img src="imagenes/logo linkedin.png" alt=""></button></a>
+        <a class="button" href="https://www.instagram.com" target="_blank"><button><img src="imagenes/logo instagram.jpg" alt=""></button></a>
       </div>
     </footer>
     
